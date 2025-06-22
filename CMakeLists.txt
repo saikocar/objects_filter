@@ -10,11 +10,14 @@ find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(autoware_auto_perception_msgs REQUIRED)
 
+find_package(visualization_msgs REQUIRED)
+
 add_executable(object_filter_node src/object_filter_node.cpp)
 
 ament_target_dependencies(object_filter_node
   rclcpp
   autoware_auto_perception_msgs
+  visualization_msgs
 )
 
 install(TARGETS
