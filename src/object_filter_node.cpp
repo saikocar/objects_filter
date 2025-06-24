@@ -50,9 +50,9 @@ private:
         continue;
       }
 
-      // カメラ座標系：右側（y < 0）を除外
+      // カメラ座標系：右側（x > 0）を除外
       const auto &pos = obj.kinematics.pose_with_covariance.pose.position;
-      if (pos.y < 0.0) continue;
+      if (pos.x > 0.0) continue;
       filtered.objects.push_back(obj);
     }
 
