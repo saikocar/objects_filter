@@ -1,5 +1,5 @@
 object_filter_node:
   ros__parameters:
-    input_topic: "/objects_on_route"
-    output_topic: "/objects_filtered"
-    excluded_labels: [1, 2, 6]  # 番号要確認
+    input_topic: "/objects_on_route_preprocess"
+    output_topic: "/objects_on_route"
+    excluded_labels: [0]
