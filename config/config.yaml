@@ -3,3 +3,7 @@ object_filter_node:
     input_topic: "/objects_on_route_preprocess"
     output_topic: "/objects_on_route"
     excluded_labels: [0]
+    output_marker_topic: "/objects_marker_filtered"
+    marker_ex_class_ns: "objects_ex_class"
+    marker_ex_pose_ns: "objects_ex_pose"
+    marker_filtered_ns: "objects_marker_filtered"
