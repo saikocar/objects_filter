@@ -13,8 +13,8 @@ def generate_launch_description():
     return LaunchDescription([
         Node(
             package='objects_filter',
-            executable='object_filter_node',
-            name='object_filter_node',
+            executable='objects_filter_node',
+            name='objects_filter_node',
             output='screen',
             parameters=[config_file]
         )

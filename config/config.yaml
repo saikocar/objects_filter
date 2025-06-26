@@ -1,4 +1,4 @@
-object_filter_node:
+objects_filter_node:
   ros__parameters:
     input_topic: "/objects_on_route_preprocess"
     output_topic: "/objects_on_route"

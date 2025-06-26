@@ -9,16 +9,18 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(autoware_auto_perception_msgs REQUIRED)
+find_package(visualization_msgs REQUIRED)
 
-add_executable(object_filter_node src/object_filter_node.cpp)
+add_executable(objects_filter_node src/objects_filter_node.cpp)
 
-ament_target_dependencies(object_filter_node
+ament_target_dependencies(objects_filter_node
   rclcpp
   autoware_auto_perception_msgs
+  visualization_msgs
 )
 
 install(TARGETS
-  object_filter_node
+  objects_filter_node
   DESTINATION lib/${PROJECT_NAME}
 )
 
